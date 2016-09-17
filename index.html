@@ -14,11 +14,11 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		 var link = document.createElement( 'link' );
+		 link.rel = 'stylesheet';
+		 link.type = 'text/css';
+		 link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		 document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
 	<body>
@@ -28,9 +28,10 @@
                     <pre><code data-trim data-noescape>
 #include &lt;stdio.h&gt;
 
-int main() {
-    printf("Linux e Software Livre");
-    return 0;
+int main()
+{
+        printf("Linux e Software Livre");
+        return 0;
 }
                     </code></pre>
                 </section>
@@ -101,22 +102,22 @@ int main() {
                         </p>
                     </section>
                     <section>
-                       <img height="80" data-src="img/mit.png">
-                       <p class="fragment topic" data-fragment-index="1">
-                           0. Simples e permissiva;
-                       </p>
-                       <p class="fragment topic" data-fragment-index="2">
-                           1. Permite que pessoas possam fazer o que quiserem com o código, contanto que contribuam de alguma forma e não te comprometam;
-                       </p>
-                       <p class="fragment topic" data-fragment-index="3">
-                           2. Projetos sob a licença MIT podem ser integrados à projetos GPL (pois ambas são licenças de copyleft), mas a reciproca não é verdadeira;
-                       </p>
-                       <p class="fragment topic" data-fragment-index="4">
-                           3. Licença mais popular de no GitHub;
-                       </p>
-                       <p class="fragment topic" data-fragment-index="5">
-                           Exemplos: Ruby on Rails, Node.js, Lua, X Window System
-                       </p>
+                        <img height="80" data-src="img/mit.png">
+                        <p class="fragment topic" data-fragment-index="1">
+                            0. Simples e permissiva;
+                        </p>
+                        <p class="fragment topic" data-fragment-index="2">
+                            1. Permite que pessoas possam fazer o que quiserem com o código, contanto que contribuam de alguma forma e não te comprometam;
+                        </p>
+                        <p class="fragment topic" data-fragment-index="3">
+                            2. Projetos sob a licença MIT podem ser integrados à projetos GPL (pois ambas são licenças de copyleft), mas a reciproca não é verdadeira;
+                        </p>
+                        <p class="fragment topic" data-fragment-index="4">
+                            3. Licença mais popular de no GitHub;
+                        </p>
+                        <p class="fragment topic" data-fragment-index="5">
+                            Exemplos: Ruby on Rails, Node.js, Lua, X Window System
+                        </p>
                     </section>
                     <section>
                         <img height="100" data-src="img/apache.png">
@@ -174,18 +175,18 @@ int main() {
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+		 // More info https://github.com/hakimel/reveal.js#configuration
+		 Reveal.initialize({
+			 history: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
+			 // More info https://github.com/hakimel/reveal.js#dependencies
+			 dependencies: [
+				 { src: 'plugin/markdown/marked.js' },
+				 { src: 'plugin/markdown/markdown.js' },
+				 { src: 'plugin/notes/notes.js', async: true },
+				 { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			 ]
+		 });
 		</script>
 	</body>
 </html>
